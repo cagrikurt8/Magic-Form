@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="formScript.js"></script>
+</head>
+<body style="background-color: azure" onload="reload()">
+    <nav>
+        <ul>
+            <li><a id="form-link" href="index.html">Form</a></li>
+            <li><a id="history-link" href="history.html">History</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+
+    <form>
+        <label for="fname"><b>First name</b></label><br>
+        <input id="fname" name="first-name" oninput="saveData()"><br><br>
+
+        <label for="lname"><b>Last name</b></label><br>
+        <input id="lname" name="last-name" oninput="saveData()"><br><br>
+
+        <label for="email"><b>Email</b></label><br>
+        <input id="email" name="email" oninput="saveData()"><br><br>
+
+        <label for="phone"><b>Phone</b></label><br>
+        <input id="phone" name="phone" oninput="saveData()"><br><br>
+
+        <label for="company"><b>Company</b></label><br>
+        <input id="company" name="company" oninput="saveData()"><br><br>
+
+        <label for="address"><b>Address</b></label><br>
+        <input id="address" name="address" oninput="saveData()"><br><br>
+
+        <button type="submit" id="submit-button" onclick="saveHistory()">Submit form</button>
+    </form>
+</body>
+</html>
